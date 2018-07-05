@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-	<title>nathan pink design</title>
+	<title>NATANEL X DESIGN</title>
 		<link href="css/reset.css" rel="stylesheet" type="text/css">
 		<meta charset="utf-8" />
 		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
@@ -9,57 +9,91 @@
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<style>
-			/* HEADER STARTS HERE */
+			/* /* HEADER STARTS HERE */
 			body {font-family: "Open Sans";
-				background-color:#555;
+				/* background-color:#555; */
 				color: rgb(225, 225, 225);
 			}
-			nav {background-color: rgba(34, 34, 34, 0.50);
-				height: 110px;
-				color: rgb(225, 225, 225);
-				font-family: "Open Sans";
-				position:fixed;
-				width:100%;
-				font-weight: 700;
-			}
-			h1 {font-size: 38px;
-				padding: 30px 0 0 50px;
-				float: left;
-			}
-			ul {text-align: right;
-				padding-top: 50px;
-				padding-right: 50px;
-				font-size: 12px;
-			}
-			li {display: inline;
-				padding: 20px;
-			}
-			a  {color: rgb(225, 225, 225);
-				text-decoration: none;
-			}
-			a:hover {color: rgb(0, 175, 242);
-			}
-			.header img {
-				float: left;
-				width: 200px;
-				height: 100px;
-				padding-top:5px;
-				margin-left: 60px;
-			}
-			/* HEADER ENDS HERE / HERO STARTS HERE */
+            /* Split the screen in half */
+            .split {
+            height: 100%;
+            width: 50%;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            overflow-x: hidden;
+            /* padding-top: 20px; */
+            }
 
-			.hero-image {
-				height:900px;
-				background-image: url("images/slide-image3.jpg");
-				background-size: cover;
-				background-position: top;
-			}
-			/* HERO ENDS HERE / FOOTER STARTS HERE */
+            /* Control the left side */
+            .left {
+            left: 0;
+            /* background-color: #111; */
+            background-image: url('images/model-example2.jpg');
+            background-size: cover;
+            }
+
+            /* Control the right side */
+            .right {
+            right: 0;
+            background-color: black;
+            font-size: 28px;
+            }
+
+            /* If you want the content centered horizontally and vertically */
+            .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            }
+
+            /*NATX BEGINS HERE */
+            
+            .natx {
+                border: 3px solid rgb(225, 225, 225);
+                font-size: 34px;
+                width: auto;
+                text-align:center;
+                padding: 10px 12px 10px 12px;
+            }
+            
+            h2 {
+                margin-bottom: 10px;
+                letter-spacing: 3px;
+            }
+            
+            
+            /* BUTTONS BEGIN HERE */
+
+            .button1 {
+
+                background-color: black;
+                border: 2px solid rgb(225, 225, 225);
+                color:white;
+                text-align:center;
+                padding: 12px 8px 12px 16px;
+                margin-top: 30px;
+                font-size: 20px;
+                font-family: "Open Sans";
+                width: auto;
+                text-transform: uppercase;
+                letter-spacing: 10px;
+                }
+
+            .button1:hover {
+                    background-color: white;
+                    color: black;
+                }
+
+            
+            /* FOOTER BEGINS HERE */
 
 			footer{
 				width:100%;
 				position: fixed;
-    		bottom: 0;
+                bottom: 0;
 				text-align: right;
 				height: 105px;
 				clear: both;
@@ -110,24 +144,32 @@
 
 <body>
 	<!-- NAV BEGINS HERE -->
-  	<nav>
-			<div class="header">
-				<a href="index.html"><img src="images/NP-mockup1.png" alt="Nathan Pink Design" /> </a>
-			</div>
+  	<!-- <nav>
 			<ul>
   			<li><a href="index.html">HOME</a></li>
-  			<li><a href="design.html">DESIGN</a></li>
-  			<li><a href="projects.html">PROJECTS</a></li>
-  			<!-- <li><a href="artwork.html">ARTWORK</a></li> -->
-  			<li><a href="bio.html">BIO</a></li>
   		</ul>
-  	</nav>
+  	</nav> -->
 	<!-- NAV ENDS HERE / HERO STARTS HERE -->
 
-		<div class="hero-image">
+		<div class="split left">
+            <div class="centered">
+                <div class= "natx">
+                    <h1>NATANEL X DESIGN</h1>
+                </div>
+                
+            </div>
+        </div>
 
-		</div>
-	<!-- HERO IMAGE ENDS HERE / FOOTER STARTS HERE -->
+        <div class="split right">
+        <div class="centered">
+            <h2>NEW PORTFOLIO SITE</h2>
+            <h2>COMING JUNE 2019</h2>
+            <a href="index.html"><button class="button1">LEARN MORE</button></a>
+            <a href="https://nathanpinkartist.wixsite.com/home"><button class="button1">OLD WEBSITE</button></a>
+        </div>
+        </div>
+
+ <!-- FOOTER STARTS HERE -->
 
 	<footer>
 		<div id="arr">
@@ -145,4 +187,3 @@
 
 </body>
 </html>
-
