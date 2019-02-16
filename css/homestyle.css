@@ -1,0 +1,206 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* HEADER STARTS HERE */
+	body {
+		font-family: "Open Sans";
+		/* background-color:#555; */
+		color: rgb(225, 225, 225);
+	}
+	
+	/* Split the screen in half */
+	.split {
+		height: 100%;
+		width: 50%;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		overflow-x: hidden;
+	/* padding-top: 20px; */
+	}
+
+	/* Control the left side */
+	.left {
+		left: 0;
+		background-color: #111; 
+		background-image: url('images/IMG_0241-small-flipped.jpg');
+		background-size: cover;
+	}
+
+	/* Control the right side */
+	.right {
+		right: 0;
+		background-color: black;
+		font-size: 28px;
+	}
+
+	/* If you want the content centered horizontally and vertically */
+	.centered {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+	}
+
+	/*NATX BEGINS HERE */
+
+	.natx {
+		border: 3px solid rgb(225, 225, 225);
+		font-size: 34px;
+		width: auto;
+		text-align:center;
+		padding: 10px 12px 10px 12px;
+	}
+
+	h2 {
+		margin-bottom: 10px;
+		letter-spacing: 3px;
+		font-size: 28px;
+	}
+
+	p {
+		font-size: 18px;
+		margin-top: 50px;
+		line-height: 24px; 
+	}
+
+	/* BUTTONS BEGIN HERE */
+
+	.button1 {
+
+		background-color: transparent;
+		border: 2px solid rgb(225, 225, 225);
+		color:white;
+		text-align:center;
+		padding: 12px 8px 12px 16px;
+		margin-top: 30px;
+		font-size: 20px;
+		font-family: "Open Sans";
+		width: auto;
+		text-transform: uppercase;
+		letter-spacing: 10px;
+		-webkit-transition:all .2s ease;transition:all .2s ease;outline:0;
+		}
+
+	.button1:hover {
+			background-color: white;
+			color: black;
+			cursor: pointer;
+		}
+
+
+	/* OVERLAY BEGINS HERE */
+
+	.overlay {
+		height: 100%;
+		width: 100%;
+		display: none;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		/*background-color: rgb(0,0,0);*/
+		background-color: rgba(0,0,0, 0.95);
+		/*overflow-x: hidden;
+		transition: 0.5s; */
+	}
+
+	.overlay-content {
+		position: relative;
+		top: 25%;
+		width: 50%;
+		text-align: center;
+		margin-top: 30px;
+		color: white;
+		margin: auto;
+	}
+
+	.overlay a {
+		padding: 8px;
+		font-size: 36px;
+		color: #818181;
+		display: block;
+		transition: 0.3s;
+	}
+
+	.overlay a:hover, .overlay a:focus {
+		color: #f1f1f1;
+	}
+
+	.overlay .closebtn {
+		position: absolute;
+		top: 20px;
+		right: 45px;
+		font-size: 60px;
+		text-decoration: none;
+	}
+
+	@media screen and (max-height: 450px) {
+	.overlay a {font-size: 20px}
+	.overlay .closebtn {
+		font-size: 40px;
+		top: 15px;
+		right: 35px;
+	}
+	}
+
+	.overlay-content .button1 {
+		font-size: 15px;
+	}
+
+	/* FOOTER BEGINS HERE */
+
+	footer{
+		width:100%;
+		position: fixed;
+		bottom: 0;
+		text-align: right;
+		height: 105px;
+		clear: both;
+		color: rgb(225, 225, 225);
+		background-color: #222;
+		font-size: 12px;
+		/* padding-top: 20px;
+		padding-bottom: 20px;
+		padding-right:80px; */
+	}
+	.fa {
+		/* padding-top: 40px;
+		padding-left: 70px; */
+	font-size: 24px;
+	width: 8px;
+		height: 8px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 50%;
+		float: left;
+	}
+	.fa-facebook {
+		padding-top: 40px;
+		padding-left: 70px;
+	}
+	.fa-instagram {
+		padding-top: 40px;
+		padding-left: 30px;
+	}
+	.artstation img {
+		float:left;
+		width:24px;
+		height: 24px;
+		padding-top: 40px;
+		padding-left: 35px;
+	}
+	#arr {
+		text-align: right;
+		padding-right: 75px;
+		padding-top: 50px;
+		padding-bottom: 10px;
+		float:right;
+		width: 300px;
+	}
+	/* FOOTER ENDS HERE */
+
+	.display-mobile {
+		display: none;
+	}

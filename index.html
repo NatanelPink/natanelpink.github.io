@@ -8,197 +8,29 @@
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<style>
-			/* /* HEADER STARTS HERE */
-			body {font-family: "Open Sans";
-				/* background-color:#555; */
-				color: rgb(225, 225, 225);
-			}
-            /* Split the screen in half */
-            .split {
-            height: 100%;
-            width: 50%;
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            overflow-x: hidden;
-            /* padding-top: 20px; */
-            }
+		
+		<!-- link to mobile css -->
+		<link href="css/homestyle_mobile.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480px)">
 
+		<!-- link to regular css --> 
+		<link href="css/homestyle.css" rel="stylesheet" type="text/css" media="only screen and (min-width:481px)">
+		<style>
             /* Control the left side */
             .left {
-            left: 0;
-            background-color: #111; 
-            background-image: url('images/model-example2.jpg');
-            background-size: cover;
+				left: 0;
+				background-color: #111; 
+				background-image: url('images/model-example2.jpg');
+				background-size: cover;
             }
-
-            /* Control the right side */
-            .right {
-            right: 0;
-            background-color: black;
-            font-size: 28px;
-            }
-
-            /* If you want the content centered horizontally and vertically */
-            .centered {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            }
-
-            /*NATX BEGINS HERE */
-            
-            .natx {
-                border: 3px solid rgb(225, 225, 225);
-                font-size: 34px;
-                width: auto;
-                text-align:center;
-                padding: 10px 12px 10px 12px;
-            }
-            
-            h2 {
-                margin-bottom: 10px;
-                letter-spacing: 3px;
-            }
-            
-            p {
-                font-size: 18px;
-                margin-top: 50px;
-                line-height: 24px; 
-            }
-            
-            /* BUTTONS BEGIN HERE */
-
-            .button1 {
-
-                background-color: black;
-                border: 2px solid rgb(225, 225, 225);
-                color:white;
-                text-align:center;
-                padding: 12px 8px 12px 16px;
-                margin-top: 30px;
-                font-size: 20px;
-                font-family: "Open Sans";
-                width: auto;
-                text-transform: uppercase;
-                letter-spacing: 10px;
-                }
-
-            .button1:hover {
-                    background-color: white;
-                    color: black;
-                }
-
-                
-            /* OVERLAY BEGINS HERE */
-            
-            .overlay {
-                height: 100%;
-                width: 100%;
-                display: none;
-                position: fixed;
-                z-index: 1;
-                top: 0;
-                left: 0;
-                background-color: rgb(0,0,0);
-                background-color: rgba(0,0,0, 0.9);
-                /*overflow-x: hidden;
-                transition: 0.5s; */
-            }
-
-            .overlay-content {
-                position: relative;
-                top: 25%;
-                width: 50%;
-                text-align: center;
-                margin-top: 30px;
-                color: white;
-                margin: auto;
-            }
-
-            .overlay a {
-                padding: 8px;
-                font-size: 36px;
-                color: #818181;
-                display: block;
-                transition: 0.3s;
-            }
-
-            .overlay a:hover, .overlay a:focus {
-                color: #f1f1f1;
-            }
-
-            .overlay .closebtn {
-                position: absolute;
-                top: 20px;
-                right: 45px;
-                font-size: 60px;
-                text-decoration: none;
-            }
-
-            @media screen and (max-height: 450px) {
-            .overlay a {font-size: 20px}
-            .overlay .closebtn {
-                font-size: 40px;
-                top: 15px;
-                right: 35px;
-            }
-            }
-            
-            /* FOOTER BEGINS HERE */
-
-			footer{
-				width:100%;
-				position: fixed;
-                bottom: 0;
-				text-align: right;
-				height: 105px;
-				clear: both;
-				color: rgb(225, 225, 225);
-				background-color: #222;
-				font-size: 12px;
-				/* padding-top: 20px;
-				padding-bottom: 20px;
-				padding-right:80px; */
+			
+			.top {
+				left: 0;
+				background-color: #111; 
+				background-image: url('images/model-example2.jpg');
+				width: 480px;
+				height: 50%;
+				background-size: cover;
 			}
-			.fa {
-				/* padding-top: 40px;
-				padding-left: 70px; */
-		    font-size: 24px;
-		    width: 8px;
-				height: 8px;
-		    text-align: center;
-		    text-decoration: none;
-		    border-radius: 50%;
-				float: left;
-			}
-			.fa-facebook {
-				padding-top: 40px;
-				padding-left: 70px;
-			}
-			.fa-instagram {
-				padding-top: 40px;
-				padding-left: 30px;
-			}
-			.artstation img {
-				float:left;
-				width:24px;
-				height: 24px;
-				padding-top: 40px;
-				padding-left: 35px;
-			}
-			#arr {
-				text-align: right;
-				padding-right: 75px;
-				padding-top: 50px;
-				padding-bottom: 10px;
-				float:right;
-				width: 300px;
-			}
-			/* FOOTER ENDS HERE */
 		</style>
 </head>
 
@@ -211,7 +43,8 @@
   	</nav> -->
 	<!-- NAV ENDS HERE / HERO STARTS HERE -->
 
-		<div class="split left">
+	<div class="display-desktop">
+        <div class="split left">
             <div class="centered">
                 <div class= "natx">
                     <h1>NATANEL X DESIGN</h1>
@@ -228,6 +61,28 @@
             <a href="#" onclick="openNav()"><button class="button1">LEARN MORE</button></a>
             <a href="https://nathanpinkartist.wixsite.com/home"><button class="button1">OLD WEBSITE</button></a>
         </div>
+        </div>
+	</div>
+       
+    <div class="display-mobile">
+        <div class="split top">
+            <div class="centered">
+                <div class= "natx">
+                    <h1>NATANEL X DESIGN</h1>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="split bottom">
+        <div class="centered">
+            <h2>NEW PORTFOLIO SITE</h2>
+            <h2>COMING JUNE 2019</h2>
+            <a href="#" onclick="openNav()"><button class="button1">LEARN MORE</button></a>
+            <a href="https://nathanpinkartist.wixsite.com/home"><button class="button1">OLD WEBSITE</button></a>
+        </div>
+        </div>
+	</div>
         
         <!-- OVERLAY STARTS HERE -->
         
@@ -236,11 +91,13 @@
             <div class="overlay-content">
                 <h2>IT'S TIME FOR A</h2>
                 <h2>SITE REVAMP</h2>
-                <p>Welcome and congratulations on making it to my landing page! As you can see, there's a bit of construction work going on here. I made this choice after deciding that I want website users to feel a more premium experience rather than suffering through all the ads and lag that often come with website builders. If you are interested in seeing my current projects or resume, I suggest heading over to my LinkedIn (linked below) to get a sense of what I'm up to. If you are seeking my graphic or web design services, please contact me via social media (choose below). Thank you for your patience. </p>
-                
+                <p>Welcome and congratulations on making it to my landing page! As you can see, there's a bit of construction work going on here. I made this choice after deciding that I want website users to feel a more premium experience rather than suffering through all the ads and lag that often come with website builders.
+                <br>
+                If you are interested in seeing my current projects or resume, I suggest heading over to my LinkedIn page to get a sense of what I'm up to. If you are seeking my graphic or web design services, please contact me via Instagram (click below). Thank you for your patience. </p>
+                <br>
+                <a href="https://www.instagram.com/itsnatanel/" target="_blank"><button class="button1" >INSTAGRAM</button></a>
             </div>
-        </div>
-        </div>
+        
         
         <script>
             function openNav() {
@@ -251,13 +108,13 @@
                 document.getElementById("myNav").style.display = "none";
             }
         </script>
-        
+	</div>
     <!-- OVERLAY ENDS HERE -->
         
 
  <!-- FOOTER STARTS HERE -->
 
-	<footer>
+	<!--<footer>
 		<div id="arr">
 			&copy; All rights reserved
 		</div>
@@ -268,7 +125,7 @@
 		<div class="artstation">
 			<a href="#"><img src="images/Artstation.png"/></a>
 		</div>
-	</footer>
+	</footer> -->
 	<!-- FOOTER ENDS HERE -->
 
 </body>
